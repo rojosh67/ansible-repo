@@ -1,0 +1,7 @@
+# [root@ip-172-16-1-20 ~]# ansible -m copy -a "dest=hello content=test" localhost
+
+- name: copy module test
+  hosts: localhost
+  tasks:
+    - copy: dest=hello content=test
+    - command: date
